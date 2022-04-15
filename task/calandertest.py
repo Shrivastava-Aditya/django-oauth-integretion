@@ -4,7 +4,7 @@
 # In[2]:
 
 
-pip install google-api-python-client
+
 
 
 # In[3]:
@@ -83,7 +83,8 @@ result = service.events().list(calendarId=calendar_id, timeZone="Asia/Kolkata").
 # In[31]:
 
 
-result['items'][0]
+import json
+print(json.dumps(result['items'][0],sort_keys=True,indent=4))
 
 
 # In[ ]:
